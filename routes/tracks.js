@@ -103,7 +103,7 @@ exports.register = function(req,res){
                 "failed":"error ocurred"
             })
         }else{
-            res.redirect("http://localhost:8080/login");
+            res.redirect("http://212.47.243.197:8080/login");
         }
     });
 }
