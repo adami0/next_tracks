@@ -93,7 +93,7 @@ exports.register = function(req,res){
         "name":req.body.name,
         "email":req.body.email,
         "password":req.body.password,
-        "creationDate":today,
+        "creationDate":today
     }
     connection.query('INSERT INTO users SET ?',users, function (error, results, fields) {
         if (error) {
