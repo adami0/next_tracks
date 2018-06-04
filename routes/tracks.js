@@ -90,8 +90,8 @@ exports.register = function(req,res){
     console.log("req",req.body);
     var today = new Date();
     var users={
-        "name":req.body.name,
         "email":req.body.email,
+        "name":req.body.name,
         "password":req.body.password,
         "creationDate":today
     }
