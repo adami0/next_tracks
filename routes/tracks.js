@@ -1,9 +1,9 @@
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-    host     : '',
-    user     : '',
-    password : '',
-    database : ''
+    host     : 'http://51.15.132.242',
+    user     : 'root',
+    password : 'root',
+    database : 'next_tracks'
 });
 
 
@@ -97,13 +97,15 @@ exports.register = function(req,res){
     }
     connection.query('INSERT INTO users SET ?',users, function (error, results, fields) {
         if (error) {
-            console.log("error ocurred",error);
             res.send({
                 "code":400,
                 "failed":"error ocurred"
             })
         }else{
-            res.redirect("http://212.47.243.197:8080/login");
+            res.send({
+                "code":200,
+                "success":"success"
+            })
         }
     });
 }
