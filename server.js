@@ -20,10 +20,10 @@ app.use(cors({
   origin: [
     "http://adami3.com",
     "http://www.adami3.com",
-    "http://212.47.243.197",
-    "http://212.47.243.197:8080",
-    "http://212.47.243.197:8081",
-    "http://212.47.243.197:8082"
+    "http://51.15.132.242",
+    "http://51.15.132.242:8080",
+    "http://51.15.132.242:8081",
+    "http://51.15.132.242:8082"
   ], // domaines validés
   methods: ["GET", "DELETE", "PATCH", "POST", "PUT"], // verbes http validés
   credentials: true // autorise set cookie
